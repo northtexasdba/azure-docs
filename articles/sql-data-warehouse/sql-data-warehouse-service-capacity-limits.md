@@ -50,6 +50,7 @@ Maximum values allowed for various components of Azure SQL Data Warehouse.
 | Category | Description | Maximum |
 |:--- |:--- |:--- |
 | Polybase Loads |MB per row |1<br/><br/>Polybase loads rows that are smaller than 1 MB. Loading LOB data types into tables with a Clustered Columnstore Index (CCI) is not supported.<br/><br/> |
+| Polybase Loads |Number of Files|1,000,000<br/><br/>An error is returned if this limit is exceeded.  Use the folder hierarchy to limit the number of files in scope. <br/><br/> |
 
 ## Queries
 | Category | Description | Maximum |
